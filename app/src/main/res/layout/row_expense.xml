@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvExpenseTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Title"
+                                    android:textStyle="normal"
+                                    android:textSize="15sp"
+                                    />
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvExpenseTitleValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="Expense"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="5dp"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvExpenseCategory"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Category"
+                                    android:textStyle="normal"
+                                    android:textSize="15sp"
+                                    />
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvExpenseCategoryValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="Category"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="5dp"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"/>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="30dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvExpenseAmount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Amount"
+                                    android:textStyle="normal"
+                                    android:textSize="15sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvExpenseAmountValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="$100"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="5dp"/>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_date"
+                                    android:layout_gravity="center_vertical"/>
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvExpenseDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    tools:text="02-06-2023"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="5dp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
