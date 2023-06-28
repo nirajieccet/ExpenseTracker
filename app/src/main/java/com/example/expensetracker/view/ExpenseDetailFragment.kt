@@ -21,7 +21,7 @@ import java.util.Calendar
 class ExpenseDetailFragment : Fragment(R.layout.fragment_expense_detail) {
 
     private var fragmentExpenseDetailBinding: FragmentExpenseDetailBinding? = null
-    private lateinit var expenseViewModel: ExpenseViewModel
+    lateinit var expenseViewModel: ExpenseViewModel
 
     var datePickerDialog: DatePickerDialog? = null
     var year = 0
